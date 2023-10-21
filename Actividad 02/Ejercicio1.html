@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .img1 {
+        width: 200px; /* Tamaño preferido para la primera imagen */
+        height: auto;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .img1 {
+            width: 100px; /* Tamaño preferido para la segunda imagen */
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        .img1 {
+            width: 50px; /* Tamaño preferido para la tercera imagen */
+        }
+    }
+    </style>
+</head>
+<link rel="icon" type="image/x-icon" href="https://www.iax.es/wp-content/themes/iax-base-home/img/iax-ivc-recursos_escudo-estandar.svg">
+<body>
+  <figure>
+    <img class="img1" src="https://www.iax.es/wp-content/themes/iax-base-home/img/iax-ivc-recursos_escudo-estandar.svg" alt="">
+    
+    
+    
+    <br>
+    <caption>IAX Alfonso X El Sabio</caption>
+  </figure>
+  <form action="registrardatos.php" method="post">
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <input autocomplete="off" type="text" name="Nombre" placeholder="Nombre"><br><br>
+        <input autocomplete="off" type="text" name="Apellidos" placeholder="Apellidos"><br><br>
+        <input type="text" autocomplete="off" name="DNI" placeholder="DNI"><br><br>
+        <input type="date" autocomplete="off" name="Fecha de Nacimiento" placeholder="Fecha de Nacimiento"><br><br>
+        <input type="email" autocomplete="off" name="Email" placeholder="Email"><br><br>
+        <select name="Tipo de domicilio">
+            <option value="calle">Calle</option>
+            <option value="Avenida">Avenida</option>
+            <option value="Plaza">Plaza</option>
+            <option value="Otro">Otro</option>
+          </select>
+          <input autocomplete="off" type="text" name="Domicilio" placeholder="Domicilio"><br><br>
+          <input autocomplete="off" type="tel" name="telefono" placeholder="Telefono"pattern="[0-9]{9}" maxlength="9">
+
+
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Estudios Previos</legend>
+        <select name="Tipo de domicilio">
+            <option value="DC">Doctorado</option>
+            <option value="LI">Licenciatura</option>
+            <option value="DI">Diplomatura</option>
+            <option value="BA">Bachillerato</option>
+            <option value="GM">Grado Medio</option>
+        </select>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Documentacion presentada</legend>
+        <select name="Tipo de documento">
+            <option value="DNI">DNI</option>
+            <option value="Pasaporte">Pasaporte</option>
+            <option value="Título">Título</option>
+            <option value="Permiso">Permiso de Residencia</option>
+
+        </select>
+        <input autocomplete="off" type="file" name="DNI" placeholder="DNI"><br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Solicitud</legend>
+            <p>Elige los grados por orden de preferencia</p>
+            <p>Primera opción</p>
+            <select name="grado_1" id="grado_1" onkeyup="buscar(this)">
+                
+                <option value="ASMR">ASMR</option>
+                <option value="DAM">DAM</option>
+                <option value="ASIR">ASIR</option>
+              </select><br>
+              <p>Segunda opción</p>
+              <select name="grado_2" id="grado_2" onkeyup="buscar(this)">
+
+                <option value="ASMR">ASMR</option>
+                <option value="DAM">DAM</option>
+                <option value="ASIR">ASIR</option>
+              </select>
+        </fieldset>
+        <br>
+        
+        <input type="submit" name="Enviar" >
+        <br><br><br><br><br>
+        <h1>Mapa de Alfonso X El Sabio</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.2300507055643!2d-1.1284289236812237!3d37.995094199437546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63821890fddf55%3A0xabf09d4fc425f806!2sIES%20Alfonso%20X%20El%20Sabio!5e0!3m2!1ses!2ses!4v1697826424636!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+        <audio src="" autoplay controls loop></audio>
+        <br><br><br>
+        <iframe width="499px" height="499px" src="https://www.youtube.com/embed/Vjeb4XxCFqc?si=Q0phDPOFyX_Rp1dV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+       
+      <br><br><br>
+      <img src="asir.png" alt="Mapa de imagen" usemap="#image-map">
+<map name="image-map">
+<area target="_blank" title="zona 1" href="https://www.todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-web.html" coords="0,0,400,60" shape="rect">
+<area target="_blank" title="zona 2" href="https://www.todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-multiplataforma.html" coords="0,60,400,130" shape="rect">
+<area target="_blank" title="zona 3" href="https://www.todofp.es/que-estudiar/loe/informatica-comunicaciones/admin-sist-informaticos-red.html" coords="0,120,400,200" shape="rect">
+
+
+</map>
+      
+      </body>
+</html>
