@@ -1,0 +1,89 @@
+body{
+    background-image: url('fondo_beige.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+fieldset>input[type="text"]{
+ 
+width: 76%;
+
+
+}
+
+fieldset>input[type="submit"]{
+float: right;
+background-color: #04AA6D;
+width: 120px;
+height: 50px;
+font-size: 20px;
+color: white;
+border-color: #04AA6D;
+
+
+
+}
+fieldset>input[type="Button"]{
+    margin-right: 0.2%;
+    float: right;
+    background-color: #04AA6D;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border-color: #04AA6D;
+    color: white;
+    
+    
+    
+    }
+
+fieldset>label{
+display: inline-block;
+width: 22% ;
+}
+fieldset>input[type="Checkbox"],fieldset>input[type="Date"],fieldset>input[type="Text"] {
+background-color: #A8C1B8;
+border-color: #A8C1B8;
+}
+
+tr>th{
+    background-color: #AE5652;
+    color: white;
+    border: 1px solid white;
+}
+#tr3>td{
+background-color: white;
+
+
+}
+tr>td{
+    border: 1px solid black;
+}
+td>input[type="button"]{
+    background-color: #A8C1B8;
+    border-color: #A8C1B8;
+}
+table{
+    border-collapse: collapse;
+    
+}
+#pie>td{
+    border: 0px;
+    height: 10px;
+    background-color: #AE5652;
+}
+#pie{
+    border: 1px solid black;
+}
+img{
+ display: block; 
+ margin-left: auto;
+ margin-right: auto;
+ width: 15%;
+}
+h1{
+    text-align: center;
+}
+ 

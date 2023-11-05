@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="indexcss.css">
+
+    <img rel="icon" type="image/x-icon" href="iax_logo.png">
+
+    <header>
+    <br><br>
+    <div>
+    <label id="iax">IES Alfonso X El Sabio</label>
+    <br>
+    <label id="act">ACTIVIDADES EXTRAESCOLARES</label>
+</div>
+        <img src="iax_logo.png" class="logo">  
+
+        <br>   
+
+        
+
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a  onclick="changeSrc('listado css.html')">Listado</a></li>
+            <li><a onclick="changeSrc('formulario css.html')">Formulario</a></li>
+            <li><a  onclick="changeSrc('ultimas.html')">Ultimas Actividades</a></li>
+            <li><a onclick="changeSrc('localizacion.html')">Localizacion</a></li>
+        </ul>
+        </nav>
+    </header>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<article class="activities">
+    <iframe id="mi-iframe" src="listado css.html" ></iframe>
+  </article> 
+    <script>
+        function changeSrc(src) {
+            document.getElementById('mi-iframe').src = src;
+        }
+    </script>
+<footer>
+    
+    <p>Redes sociales</p>
+    <a target="_blank" href="https://www.instagram.com/iaxmurcia/?hl=es"><img id="ig" src="insta.png" alt=""></a>
+    <a target="_blank" href="https://www.facebook.com/iaxmurcia/"><img id="fb" src="facebook.png" alt=""></a>
+    <a target="_blank" href="https://twitter.com/iaxmurcia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img id="tw" src="twitter.png" alt=""></a>
+   <div> <label>Email: 30006151@murciaeduca.es</label>
+    <label >Teléfono: 968232040</label>
+    <label >Direccion: Avenida Don Juan de Borbón, 30007</label>
+   </div>
+</footer>
+</body>
+</html>
