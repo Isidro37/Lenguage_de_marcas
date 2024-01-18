@@ -1,0 +1,21 @@
+<!ELEMENT videoclub (ejemplar+)>
+<!ELEMENT ejemplar (titulo, titulo_original?, nacionalidad, genero, clasificac?,sin_clasificar?, sinopsis, guion, director, reparto)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT titulo_original (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT clasificac (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT guion (guionista+, autor_novela?)>
+<!ELEMENT guionista (#PCDATA)>
+<!ELEMENT autor_novela (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT reparto (actor+)>
+<!ELEMENT actor (#PCDATA)>
+<!ELEMENT sin_clasificar EMPTY>
+
+<!ATTLIST ejemplar tipo (largometraje|corto|documental) "largometraje">
+<!ATTLIST ejemplar iden ID #REQUIRED>
+<!ATTLIST ejemplar durac CDATA #REQUIRED>
+<!ATTLIST ejemplar anyo CDATA "1995">
+<!ATTLIST clasificac edad (tp|8|12|16|18) #REQUIRED>
